@@ -3,6 +3,13 @@ extends Node2D
 var spid = 99
 var velocity = Vector2()
 
+var speed = 200
+var motion = Vector2()
+var gravity = 20
+
+var direction = 1
+
+
 func _ready():
 	random()
 	
@@ -11,7 +18,10 @@ func _process(delta):
 		velocity = Vector2(spid, 0)
 	else:
 		velocity = Vector2(0,0)
+		
 	
+
+
 	
 
 func random():
@@ -19,4 +29,7 @@ func random():
 	var posx
 	rngvar.randomize()
 	posx = rngvar.randi_range(150, 850)
-	$fundal/gunoi_sprite.position = Vector2(posx, 550)
+	
+
+
+
