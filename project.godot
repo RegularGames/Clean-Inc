@@ -14,6 +14,10 @@ config/name="Clean Inc"
 run/main_scene="res://Clean Inc.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+global="*res://global.gd"
+
 [input]
 
 ui_left={
